@@ -1,24 +1,27 @@
-function getComputerChoice(){
+function getComputerChoice() {
     let choice;
-    let randomvalue = Math.floor((Math.random())*3);
-    switch (randomvalue){
+    let randomvalue = Math.floor((Math.random()) * 3);
+    switch (randomvalue) {
         case 0:
-            choice="Rock";
+            choice = "Rock";
             break;
         case 1:
-            choice="Paper";
+            choice = "Paper";
             break;
         case 2:
-            choice="Scissors";
+            choice = "Scissors";
             break;
     }
     return choice;
 }
 
-function getHumanChoice(){
-    let user=prompt("Choose rock, paper or scissors");
+function getHumanChoice() {
+    let user = prompt("Choose rock, paper or scissors");
     return user.toLowerCase();
 }
+
+let humanScore = 0;
+let computerScore = 0;
 
 console.log(getComputerChoice());
 console.log(getHumanChoice());
